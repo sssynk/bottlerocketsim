@@ -14,7 +14,7 @@ class BottleRocketSimulator():
         # Unit descriptions: SI-units (pa, kg, m^3, radians, m, s)
         print("\nBottle Rocket Simulator: Created by @axelstr and @jameswils.on")
         print("Please Input the following parameters:")
-        p_over = 689476
+        p_over = float(input("Overpressure (PSI): "))*6894.76
         V_bottle = float(input("DryBottleVolume (L): "))/1000
         V_water = float(input("WaterVolume (L): "))/1000
         m_water = V_water*998

@@ -1,0 +1,10 @@
+{
+    "psi": 120,
+    "dryvolume": 2,
+    "watervolume": 0.8,
+    "mass": 0.1,
+    "gravity": 9.801,
+    "launchangle": 45,
+    "cod": 0.3, 
+    "diameter": 11
+}
