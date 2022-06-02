@@ -12,7 +12,10 @@ class BottleRocketSimulator():
     def simulate():
         # All problem parameters are to be specified here
         # Unit descriptions: SI-units (pa, kg, m^3, radians, m, s)
+
+
         print("\nBottle Rocket Simulator: Created by @axelstr and @jameswils.on")
+
         print("Please Input the following parameters:")
         p_over = float(input("Overpressure (PSI): "))*6894.76
         V_bottle = float(input("DryBottleVolume (L): "))/1000
@@ -36,6 +39,7 @@ class BottleRocketSimulator():
             V_bottle, V_water, 
             m_bottle, m_water,
             gamma)
+        print("Estimated Vi: %.2f m/s" % u_bottle_0)
         print("Computing flight path...")
         flight_iterator = FlightIterator()
         flight_iterator.iterate(m_bottle, u_bottle_0, k, alpha_0, g)
